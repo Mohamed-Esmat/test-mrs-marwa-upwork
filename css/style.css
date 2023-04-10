@@ -35,7 +35,7 @@ body {
   
 }
 /* *************************** */
-/* RESUABLE CLASSES*/
+/* REUSABLE CLASSES*/
 /* *************************** */
 .dir-ltr {
   direction: ltr;
@@ -88,18 +88,14 @@ color: #1AB068;
 .mb-76 {
   margin-bottom: 7.6rem;
 }
- 
 
 /* START SECTION SIDEBAR */
-.section {
-  height: 100vh;
-}
-.section .sidebar {
+.sidebar {
   /* height: 1994px; */
   background-color: #fff;
   line-height: 1.6;
 }
-.section .sidebar-icon-title {
+.sidebar-icon-title {
   font-weight: 400;
 font-size: 1.6rem;
 line-height: 120%;
@@ -110,6 +106,7 @@ color: #000000;
   font-size: 1.6rem;
   font-weight: 500;
 }
+/* Start Navbar */
 .navbar .navbar-nav .nav-link .style-user-svg {
   width: 5rem;
   height: 5rem;
@@ -117,8 +114,6 @@ color: #000000;
   margin-right: 1.1rem;
   background-color: #E9EAEF;
 }
-
-/* Start Navbar */
   .navbar {
   height: 11.7rem;
 }
@@ -135,7 +130,6 @@ line-height: 2.2rem;
 color: #000000;
 }
 /* End Navbar */
-
 /* END SECTION SIDEBAR */
 
 /* Start Event Information */
@@ -311,7 +305,6 @@ line-height: 120%;
 .btn.custom-purple,
 .btn.delete-icon-btn,
 .btn-main-purple {
-  /* border-radius: 4px; */
   color: #fff !important;
   gap: 8px;
   font-weight: 500;
@@ -367,7 +360,6 @@ padding: 1.8rem 0 2.2rem 1.6rem;
    background: #FCFCFD;
    border: 1px solid #F4F5F7;
    border-radius: 4px;
-   
   }
   .user-input-main-style,
   .normal-user-input,
@@ -385,7 +377,6 @@ padding: 1.8rem 0 2.2rem 1.6rem;
   background: #FCFCFD;
   border: none;
 }
-
 .user-inputs .user-input-main-style::placeholder,
 .user-inputs .user-input-calender::placeholder,
 .user-inputs .input-description::placeholder ,
@@ -443,7 +434,6 @@ input.arabic-input {
   left: 1rem;
   transform: translateY(-50%);
 }
-
 input.arabic-desc-position {
   position: relative;
   padding-right: 2rem;
