@@ -23,7 +23,7 @@ Bold: 700
 }
 html {
   direction: rtl;
-  font-size: 10px;
+  font-size: 56.25%;
   overflow-x: hidden;
 }
 
@@ -31,7 +31,12 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 2.4rem;
   line-height: 1;
+  overflow-x: hidden;
+  
 }
+/* *************************** */
+/* RESUABLE CLASSES*/
+/* *************************** */
 .dir-ltr {
   direction: ltr;
 }
@@ -101,21 +106,49 @@ line-height: 120%;
   background-color: #fff;
   padding: 1.8rem 4rem;
 }
-.btn.btn-main-purple {
-  background: #4D0790;
-  border-radius: 4px;
+.btn.custom-purple,
+.btn.delete-icon-btn,
+.btn-main-purple {
+  /* border-radius: 4px; */
   color: #fff !important;
-  padding: 1.8rem 7.2rem;
   gap: 8px;
   font-weight: 500;
-font-size: 1.6rem;
-line-height: 120%;
+  font-size: 1.6rem;
+  line-height: 120%;
 }
-.custom-purple {
+.btn.btn-main-purple {
+  background: #4D0790;
+  padding: 1.8rem 7.2rem;
+}
+.btn.delete-icon-btn {
+  padding: 1.875rem 1.875rem;
+  border: 1px solid #CB544B;
+}
+.btn.custom-purple-add {
+  padding: 1.7rem 3.2rem;
+}
+.btn.custom-purple {
   padding: 1.85rem 3.2rem;
 }
+.btn.delete-icon-btn {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.btn.add-icon-btn {
+  background: #4D0790;
+  border-radius: 4px;
+  padding: 1.85rem;
+}
+.custom-user-input-mobile {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-right: none;
+}
 .custom-user-input {
-  padding: 1.8rem 0 2.2rem 1.6rem;
+padding: 1.8rem 0 2.2rem 1.6rem;
+}
+.custom-user-input-mobile {
+  padding: 3rem 0 2.2rem 1.6rem;
 }
 .user-inputs .main-input-label {
   font-weight: 700;
@@ -147,7 +180,6 @@ line-height: 120%;
   text-align: end;
   padding: 1.8rem 0 15.8rem 1.6rem;
 }
-
 .user-input-calender {
   background: #FCFCFD;
   border: none;
@@ -158,21 +190,28 @@ line-height: 120%;
 .user-inputs .input-description::placeholder ,
 .user-inputs .normal-user-input::placeholder,
 .user-inputs .arabic-description::placeholder ,
-.user-inputs .custom-user-input::placeholder {
+.user-inputs .custom-user-input::placeholder,
+.user-inputs .custom-user-input-mobile::placeholder {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 120%;
-  
 }
 .user-inputs .user-input-main-style::placeholder,
-.user-inputs .user-input-calender::placeholder {
+.user-inputs .user-input-calender::placeholder,
+.user-inputs .custom-user-input-mobile::placeholder {
   color: #000000;
+}
+.custom-user-input-mobile.muted-placeholder::placeholder {
+  font-weight: 400;
+font-size: 1.2rem;
+line-height: 120%;
+color: #BBBBBB;
 }
 .normal-user-input {
   color: #BBBBBB;
 }
 
-/* Start Section */
+/* START SECTION SIDEBAR */
 .section {
   height: 100vh;
 }
@@ -218,7 +257,7 @@ color: #000000;
 }
 /* End Navbar */
 
-/* End Section */
+/* END SECTION SIDEBAR */
 
 /* Start Event Information */
 .event-information-step1 {
@@ -236,15 +275,14 @@ color: #000000;
   line-height: 2.4rem;
   color: #BBBBBB;
 }
-
 .step-wizard-list{
   background: #F4F5F7;
   list-style-type: none;
+  padding-left: 0rem;
   display: flex;
   position: relative;
   z-index: 10;
 }
-
 .step-wizard-item{
   flex-basis: 0;
   -webkit-box-flex: 1;
@@ -254,7 +292,7 @@ color: #000000;
   display: flex;
   flex-direction: column;
   text-align: center;
-  min-width: 30rem;
+  min-width: 27rem;
   position: relative;
 }
 .step-wizard-item + .step-wizard-item:after{
@@ -294,6 +332,12 @@ color: #000000;
 .current-item .progress-count{
   background: #F4F5F7;
   border: 3px solid #4D0790;
+}
+.current-item .progress-count span {
+  background-color: #4D0790;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
 }
 .progress-count .not-completed{
   border: 1px solid #BBBBBB;
@@ -350,7 +394,6 @@ color: #4D0790;
   height:1rem;
   width:1rem;
 }
-
 .event-information-step1 .purple-heading {
   color: #4D0790;
 }
@@ -371,24 +414,20 @@ color: #4D0790;
 .user-inputs {
   margin-top: 4rem;
 }
-
 .input-icons i {
   position: absolute;
   right: 1rem;
     top: 50%;
     transform: translate(-50%, -50%);
 }
-
 .input-icons {
   width: 100%;
   margin-bottom: 1rem;
 }
-
 .icon {
   padding: 1rem;
   min-width: 4rem;
 }
-
 .input-field {
   width: 100%;
   padding: 1rem;
@@ -399,14 +438,3 @@ color: #4D0790;
 
 
 
-/* Start Query */
-/* *************************** */
-/* BELOW 1730px [108.125em](Smaller desktops)*/
-/* *************************** */
-@media (max-width: 109em) {
-  .user-inputs .col-md-12 {
-    flex: 0 0 auto;
-    width: 100%;
-}
-}
-/* End Query */

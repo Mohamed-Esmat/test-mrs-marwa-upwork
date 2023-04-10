@@ -1,0 +1,49 @@
+/* Start Query */
+/* *************************** */
+/* BELOW 1730px [108.125em]*/
+/* *************************** */
+@media (max-width: 109em) {
+  .user-inputs .col-md-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+/* *************************** */
+/* BELOW 1562px [97.625em]*/
+/* *************************** */
+@media (max-width: 98em) {
+  
+}
+/* *************************** */
+/* BELOW 1344px / 16px[84em]*/
+/* *************************** */
+@media (max-width: 84em) {
+  html {
+    font-size: 50%;
+  }
+}
+/* *************************** */
+/* BELOW 1155px / 16px[72.1875em] TO 991px / 16px[61.93em] */
+/* *************************** */
+@media (max-width: 72em) and (min-width:62em)  {
+  html {
+    font-size: 42%;
+  }
+}
+/* *************************** */
+/* BELOW 992px / 16px[62em] */
+/* *************************** */
+@media  (max-width:62em)  {
+  html {
+    font-size: 42%;
+  }
+}
+/* *************************** */
+/* BELOW 500px [31.25em]*/
+/* *************************** */
+@media (max-width: 32em) {
+ .first-step-page .card .card-caption {
+  flex-direction: column;
+ }
+}
+/* End Query */
